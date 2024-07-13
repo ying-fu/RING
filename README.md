@@ -62,6 +62,7 @@ cd RING
 3. pytorch 1.7.1
 
 ### Training
+'''
 CUDA_VISIBLE_DEVICES=0  python train.py \
 --dataroot Datasets \
 --name try_first \
@@ -71,14 +72,19 @@ CUDA_VISIBLE_DEVICES=0  python train.py \
 --ngf 50 \
 --n_epochs 200 \
 --n_epochs_decay 300 \
+'''
+
 
 
 ### Testing
 
+'''
 CUDA_VISIBLE_DEVICES=0  python test.py \
 --dataroot Datasets \
 --name try_first \
 --test_epoch best \
+'''
+
 
 ## Results
 
